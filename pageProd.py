@@ -11,52 +11,52 @@ response = requests.get(url)
 
 
 if response.ok:
-    dico = {}
+    #dico = {}
     print("\n")
-    dico['product_page_url: '] = url
+    #dico['product_page_url: '] = url
     print("url:", url)    
     print("\n")
     
     soup = BeautifulSoup(response.text, 'html.parser')
     upc = soup.find('table', {'class': 'table table-striped'}).find('td')
-    dico['universal_ product_code (upc): '] = upc.text
-    print("UPC:", upc.text)
+    #dico['universal_ product_code (upc): '] = upc.text
+    #print("UPC:", upc.text)
     
     titre = soup.find('div', {'class': 'col-sm-6 product_main'}).find('h1')
-    dico['title: '] = titre.text
-    print("Titre:", titre.text)
+    #dico['title: '] = titre.text
+    #print("Titre:", titre.text)
     
     tds = soup.find('table', {'class': 'table table-striped'}).findAll('td')    
     price_ht = tds[2].text 
-    dico['price_excluding_tax: '] = price_ht
-    print("Tarif HT: ", price_ht)
+    #dico['price_excluding_tax: '] = price_ht
+    #print("Tarif HT: ", price_ht)
     price_ttc = tds[3].text
-    dico['price_including_tax: '] = price_ttc
-    print("Tarif TTC: ", price_ttc)
+    #dico['price_including_tax: '] = price_ttc
+    #print("Tarif TTC: ", price_ttc)
     numAv = tds[5].text
-    dico['number_available: '] = numAv
-    print("Number available: ", numAv)
-    print("\n")    
+    #dico['number_available: '] = numAv
+    #print("Number available: ", numAv)
+    #print("\n")    
     
     bal_p = soup.findAll('p')
     prod_description = bal_p[3].text
-    dico['product_description: '] = prod_description
-    print(prod_description)
-    print("\n")
+    #dico['product_description: '] = prod_description
+    #print(prod_description)
+    #print("\n")
     
     liste_a = soup.find('ul', class_ = 'breadcrumb').findAll('a')    
     category = liste_a[2].text
-    dico['category: '] = category
-    print(category)
+    #dico['category: '] = category
+    #print(category)
     print("\n")
     
     reviewRating = tds[6].text
-    dico['review_rating: '] = reviewRating
-    print(reviewRating)    
-    print("\n")
+    #dico['review_rating: '] = reviewRating
+    #print(reviewRating)    
+    #print("\n")
     
     img_url = soup.find('img')
-    dico['image_url: '] = img_url
+    #dico['image_url: '] = img_url
     print(img_url)
     
     #for i in dico.items():
