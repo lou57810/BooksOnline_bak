@@ -1,7 +1,8 @@
-P2_01_LivreAuHasard.py	Premier script demandé: Affiche les données d'un livre au hasard.
-P2_02_allBooksOfOneCategory.py Deuxieme script: Affiche les données livres d'une catégorie au hasard.
-P2_03_tousLesLivresClasseParCat.py Troisième script: Affiche les données livres de chaques catégories,
-et enregistrées séparément dans des fichiers .csv de 1 à 50.
+P2_01_LivreAuHasardFinal.py	Premier script demandé: Affiche les données d'un livre au hasard.
+P2_02_allBooksOfOneCategoryFinal.py Deuxieme script: Affiche les données livres d'une catégorie au hasard.
+P2_03_tousLesLivresClasseParCatFinal.py Troisième script: Affiche les données livres de chaques catégories,
+et enregistrées séparément dans des fichiers .csv de 1 à 50, dans un dossier listeParCat, ainsi que les
+1000 images dans un dossier img.
 
 
 
