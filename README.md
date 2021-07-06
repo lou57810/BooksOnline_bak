@@ -3,15 +3,7 @@ P2_02_allBooksOfOneCategory2.py Deuxieme script: Affiche les données livres d'u
 P2_03_tousLesLivresClasseParCat2.py Troisième script: Affiche les données livres de chaques catégories,
 et enregistrées séparément dans des fichiers .csv de 1 à 50.
 
-WARNING!
-Pour le dernier script, afin de séparer les résultats, j'ai trouvé plus commode de créer
-un dossier img à l'intérieur du dossier acceuillant les scripts, pour séparer les 1000 images
-à télécharger, lors de l'execution de l'application 'tousLesLivresClasseParCat2.py'.
 
-ex: $ mkdir dossierScripts
-    $ cd dossierScripts (Il contiendra les scripts)
-    $ mkdir img
-    $ python tousLesLivresClasséParCat.py	
 
 Pour réussir à developper et executer ces applications en langage python,
 il est nécessaire de créer un environnement propre:
